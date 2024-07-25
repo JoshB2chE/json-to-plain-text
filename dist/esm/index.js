@@ -102,7 +102,7 @@ function jsonToPlainText(data, options) {
                 output += handler(item, true);
             }
             else {
-                output += ", " + handler(item, true);
+                output += "\n" + handler(item, true);
             }
         });
         return outputOptions.squareBracketsForArray ? "[ " + output + " ]" : output;
